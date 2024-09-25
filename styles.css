@@ -1,0 +1,391 @@
+
+
+/* Restablecer márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FONDO*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871); /* Gradiente de colores */
+    background-attachment: fixed; 
+    color: #2C3E50; 
+}
+
+/* ESTLO DEL MENU */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* FONDO BLANCO */
+    z-index: 1000;
+    padding: 10px 0; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 30px; /* Aumentar el margen entre los elementos del menú */
+}
+
+nav ul li a {
+    color: #2C3E50; /* Color del texto */
+    text-decoration: none;
+    font-size: 20px; /* Aumentar el tamaño del texto */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #845ec2; /* Cambiar a un color del fondo de la página */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para resaltar la opción */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+}
+
+
+/* Estilo para el scrollbar */
+body::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d65db1; /* Color del pulgar del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del pulgar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5); /* Color de la pista del scrollbar */
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* Revertir el estilo de la sección de inicio */
+#inicio {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    min-height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+    padding: 20px;
+    color: #ffffff;
+    background-color: transparent; /* Puedes cambiar el color o agregar una imagen de fondo */
+}
+
+#inicio .contenido {
+    max-width: 600px; /* Limita el ancho del texto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+#sobre-mi, #Proyectos, #Formacion_habilidades {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco semi-transparente */
+    color: #000000;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1050px;
+    min-height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#Formacion_habilidades{
+    min-height: 600px;
+}
+
+#Proyectos{
+    min-height: 400px;
+}
+
+/* Estilo de la sección Sobre Mí */
+#sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.sobre-mi-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Formacion_habilidades-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sobre-mi-texto {
+    width: 60%; /* Ocupa el 60% del ancho de la sección para el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.sobre-mi-imagen {
+    width: 30%; /* Ocupa el 30% del ancho de la sección para la imagen */
+    text-align: right; /* Asegura que la imagen esté alineada a la derecha */
+}
+
+.sobre-mi-imagen img {
+    max-width: 80%; /* Asegura que la imagen no sea más grande que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: redondea las esquinas de la imagen */
+}
+
+#proyectos {
+    text-align: center; /* Centra el contenido */
+    padding: 40px 0;
+}
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center; /* Alinea los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.boton {
+    text-align: center;
+}
+
+.boton img {
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: 100px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen dentro del botón */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    cursor: pointer; /* Muestra un cursor de mano al pasar sobre la imagen */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.boton img:hover {
+    transform: scale(1.1); /* Efecto de agrandar la imagen al pasar el mouse */
+}
+
+.boton h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre íconos */
+    font-size: 40px; /* Tamaño del ícono */
+    color: #000; /* Color del ícono */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto debajo del ícono */
+}
+
+.social-icons a span {
+    display: block; /* Hacer que el texto esté en una nueva línea */
+    margin-top: 8px; /* Espaciado entre el ícono y el texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Color al pasar el ratón */
+}
+
+/* Estilos para las imágenes de habilidades */
+.imagenes-habilidades {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes */
+    gap: 40px; /* Espacio entre imágenes */
+    margin-top: 20px;
+}
+
+.habilidad {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+}
+
+.habilidad img {
+    width: 120px; /* Tamaño de las imágenes */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+.habilidad img:hover {
+    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse */
+}
+
+.habilidad p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para centrar el texto de la sección Formacion_habilidades */
+#Formacion_habilidades {
+    text-align: center; /* Centra todo el contenido de la sección */
+    padding: 50px 20px;
+    height: 450px;
+}
+
+.Formacion_habilidades-texto .contenido {
+    margin: 0 auto;
+    max-width: 800px; /* Limita el ancho del contenido para que no sea demasiado ancho */
+}
+
+.Formacion_habilidades-texto h1,
+.Formacion_habilidades-texto p {
+    text-align: center; /* Centra los h1 y p dentro de la sección */
+}#Formacion_habilidades {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.Formacion_habilidades-texto .contenido {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.Formacion_habilidades-texto h1,
+.Formacion_habilidades-texto p {
+    text-align: center;
+}
+
+/* Estilos para la galería de imágenes */
+.galeria-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 1px;
+}
+
+.imagen-contenedor {
+    text-align: center;
+    width: 150px;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.imagen-contenedor h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/*Cambios proyecto*/
+/* Centrar el título de Proyectos */
+.titulo-proyectos {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las imágenes en dos columnas */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    gap: 20px; /* Espacio entre la imagen y la descripción */
+    flex-direction: row-reverse; /* Pone la imagen a la derecha y la descripción a la izquierda */
+}
+
+/* Estilo para cada imagen-proyecto */
+.imagen-proyecto {
+    text-align: left; /* Alinea la descripción a la izquierda */
+    width: 50%; /* Controla el ancho de la descripción */
+}
+
+.imagen-proyecto img {
+    width: 300px; /* Ajusta al 100% del contenedor de la imagen */
+    height: 550px;
+    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagen-proyecto p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/*Ultima seccion*/
+
+/* Estilos para la nueva sección */
+#nueva-seccion {
+    background-color: rgba(255, 255, 255, 0.5); /* Mismo fondo transparente */
+    color: #000000;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1050px;
+    min-height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nueva-seccion-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nueva-seccion-texto {
+    width: 60%; /* Texto alineado a la izquierda */
+    text-align: left;
+}
+
+.nueva-seccion-imagen {
+    width: 30%; /* Imagen alineada a la derecha */
+    text-align: right;
+}
+
+.nueva-seccion-imagen img {
+    max-width: 80%; /* Asegura que la imagen no sea más grande que su contenedor */
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Flecha para bajar*/
+
+#Proyectos {
+    position: relative; /* Asegura que la flecha se posicione relativa a esta sección */
+    padding-bottom: 50px; /* Espacio adicional en la parte inferior para la flecha */
+}
+
+.flecha-bajar {
+    position: relative; /* Posición absoluta para colocar la flecha */
+    right: 20px; /* Distancia desde el lado derecho */
+    bottom: 20px; /* Distancia desde el fondo de la sección */
+    font-size: 24px; /* Tamaño de la flecha */
+    color: #2C3E50; /* Color de la flecha */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+    margin-top: -40px; /* Ajusta el valor según lo que necesites */
+    text-align: center;
+}
+
+.flecha-bajar:hover {
+    color: #845ec2; /* Color al pasar el ratón */
+}
+
+
